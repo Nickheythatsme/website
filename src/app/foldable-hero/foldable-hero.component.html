@@ -1,0 +1,8 @@
+<div class="container-fluid foldable-hero">
+  <h2 class="row p-2" (click)="onClick()">{{ heroContents.title }}</h2>
+  <div class="" [@buttonInsertRemove]="isOpen? 'open' : 'closed'">
+    <p class="lead">{{ heroContents.lead }}</p>
+    <hr class="my-4">
+    <p>{{ heroContents.description }}</p>
+  </div>
+</div>
