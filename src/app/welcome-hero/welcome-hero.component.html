@@ -1,0 +1,13 @@
+  <div>
+    <button class="btn btn-sm btn-secondary" (click)="onClick()">
+      More info
+      {{isOpen? 'Hide' : 'More Info'}}
+    </button>
+    <div class="welcome-hero jumbotron" @buttonInsertRemove *ngIf="isOpen">
+      <h1 class="display-4">Haley and Nick's Wedding</h1>
+      <p class="lead">Welcome to Haley and Nick's wedding. This site shows event details and updates from the bride and
+        groom.</p>
+      <hr class="my-4">
+      <p>Come back here regularly to see wedding updates.</p>
+    </div>
+  </div>
