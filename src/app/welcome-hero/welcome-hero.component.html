@@ -3,7 +3,7 @@
       More info
       {{isOpen? 'Hide' : 'More Info'}}
     </button>
-    <div class="welcome-hero jumbotron" @buttonInsertRemove *ngIf="isOpen">
+    <div class="welcome-hero jumbotron" [@buttonInsertRemove]="isOpen? 'open' : 'closed'">
       <h1 class="display-4">Haley and Nick's Wedding</h1>
       <p class="lead">Welcome to Haley and Nick's wedding. This site shows event details and updates from the bride and
         groom.</p>

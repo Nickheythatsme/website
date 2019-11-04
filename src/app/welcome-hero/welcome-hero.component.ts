@@ -15,13 +15,21 @@ import {
   styleUrls: ['./welcome-hero.component.scss'],
   animations: [
     trigger('buttonInsertRemove', [
-      transition(':enter', [
-        style({ transform: 'translateX(-100%)' }),
-        animate('0.5s')
+      state('open', style({
+        height: '200px',
+        opacity: 1,
+      })),
+      state('closed', style({
+        height: '0px',
+        opacity: 0.5,
+        paddingTop: '0px',
+        paddingBottom: '0px'
+      })),
+      transition('open => closed', [
+        animate('0.3s')
       ]),
-      transition(':leave', [
-        animate('0.2s'),
-        style({ transform: 'translateX(100%)' }),
+      transition('closed => open', [
+        animate('0.3s')
       ])
     ]),
   ],
@@ -32,7 +40,6 @@ export class WelcomeHeroComponent implements OnInit {
 
   ngOnInit() {
   }
-
 
   onClick() {
     this.isOpen = !this.isOpen;
