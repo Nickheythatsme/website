@@ -1,8 +1,10 @@
 <div class="container-fluid foldable-hero">
-  <h2 class="row p-2" (click)="onClick()">{{ heroContents.title }}</h2>
+  <h2 class="row p-2" (click)="onClick()" [@buttonInsertRemove]="isOpen? 'openTitle' : 'closedTitle'">
+    {{ heroContents.title }}</h2>
   <div class="" [@buttonInsertRemove]="isOpen? 'open' : 'closed'">
-    <p class="lead">{{ heroContents.lead }}</p>
+    <p class="lead" *ngIf="heroContents.lead">{{ heroContents.lead }}</p>
     <hr class="my-4">
-    <p>{{ heroContents.description }}</p>
+    <p *ngIf="heroContents.description">{{ heroContents.description }}</p>
+  <ng-content></ng-content>
   </div>
 </div>

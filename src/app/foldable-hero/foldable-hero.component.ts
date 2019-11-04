@@ -16,6 +16,12 @@ import {
   styleUrls: ['./foldable-hero.component.scss'],
   animations: [
     trigger('buttonInsertRemove', [
+      state('openTitle', style({
+        fontSize: '1.5em'
+      })),
+      state('closedTitle', style({
+        fontSize: '1em'
+      })),
       state('open', style({
         opacity: 1,
       })),
@@ -23,12 +29,9 @@ import {
         height: '0px',
         opacity: 0,
       })),
-      transition('open => closed', [
+      transition('* <=> *', [
         animate('0.2s')
       ]),
-      transition('closed => open', [
-        animate('0.2s')
-      ])
     ]),
   ],
 })
