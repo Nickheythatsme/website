@@ -25,16 +25,26 @@
 }
 
 .left-button {
-    background-image: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1));
     left: 0;
 }
 
+.left-button:hover {
+    background-image: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1));
+}
+
 .right-button {
-    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1));
     right: 0;
+}
+
+.right-button:hover {
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1));
 }
 
 .img-container {
     position: relative;
     padding: 0;
+}
+
+.img-container img {
+    cursor: pointer;
 }

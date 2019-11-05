@@ -1,12 +1,12 @@
 <div class="container-fluid img-container">
     <div>
-        <img [src]="currentSrc" class="img-fluid" alt="Current Image">
-        <div class="image-button left-button">
+        <img (click)="nextImage()" [src]="imageSrcs[currentIndex]" class="img-fluid" alt="Current Image">
+        <div (click)="previousImage()" class="image-button left-button">
             <h1 class="">
                 <
             </h1>
         </div>
-        <div class="image-button right-button">
+        <div (click)="nextImage()" class="image-button right-button">
             <h1 class="">
                 >
             </h1>

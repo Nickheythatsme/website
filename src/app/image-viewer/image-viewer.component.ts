@@ -6,12 +6,24 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./image-viewer.component.scss']
 })
 export class ImageViewerComponent implements OnInit {
-  @Input() currentSrc;
   @Input() imageSrcs: [string];
+  currentIndex = 0;
 
   constructor() { }
 
   ngOnInit() {
+  }
+  
+  nextImage() {
+    ++this.currentIndex;
+    this.currentIndex = this.currentIndex % this.imageSrcs.length;
+  }
+
+  previousImage() {
+    --this.currentIndex;
+    if (this.currentIndex < 0) {
+      this.currentIndex = this.imageSrcs.length - 1;
+    }
   }
 
 }
