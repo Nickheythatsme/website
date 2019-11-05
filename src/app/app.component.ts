@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   ]
 })
 export class AppComponent {
-  title = 'website';
+  title = 'H&N 7/4/2020';
   imageSrcs = [
     'https://i.imgur.com/8fhTLp0.jpg',
     'https://i.imgur.com/2PewqYS.jpg',

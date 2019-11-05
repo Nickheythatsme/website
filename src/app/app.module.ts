@@ -10,6 +10,7 @@ import { FoldableHeroComponent } from './foldable-hero/foldable-hero.component';
 import { HeroContents } from './foldable-hero/hero-contents';
 import { HeroListComponent } from './hero-list/hero-list.component';
 import { ImageViewerComponent } from './image-viewer/image-viewer.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ImageViewerComponent } from './image-viewer/image-viewer.component';
     WelcomeHeroComponent,
     FoldableHeroComponent,
     HeroListComponent,
-    ImageViewerComponent
+    ImageViewerComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
