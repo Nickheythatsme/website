@@ -5,4 +5,14 @@
 <div>
   <p>This is going to be a great wedding!</p>
 </div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <app-image-viewer 
+      [currentSrc]="currentSrc"
+      [imageSrcs]="imageSrcs"
+      ></app-image-viewer>
+    </div>
+  </div>
+</div>
 <router-outlet></router-outlet>

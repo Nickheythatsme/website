@@ -9,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'website';
+  currentSrc = 'https://i.imgur.com/8fhTLp0.jpg';
+  imageSrcs = [
+    'https://i.imgur.com/8fhTLp0.jpg',
+    'https://i.imgur.com/2PewqYS.jpg',
+    'https://i.imgur.com/0MlFKkk.jpg',
+    'https://i.imgur.com/KKuQh6o.jpg',
+    'https://i.imgur.com/ijWz2wx.jpg',
+  ];
+
 }
