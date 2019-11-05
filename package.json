@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "deploy": "ng build --prod && cd dist/website && http-server -p 80",
+    "deploy": "ng build --prod",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

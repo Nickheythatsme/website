@@ -1,14 +1,10 @@
-<div>
-  <app-welcome-hero></app-welcome-hero>
-  <app-hero-list></app-hero-list>
-</div>
+<app-welcome-hero>
+</app-welcome-hero>
+<app-hero-list></app-hero-list>
 <div class="container">
   <div class="row">
     <div class="col">
-      <app-image-viewer 
-      [currentSrc]="currentSrc"
-      [imageSrcs]="imageSrcs"
-      ></app-image-viewer>
+      <app-image-viewer [currentSrc]="currentSrc" [imageSrcs]="imageSrcs"></app-image-viewer>
     </div>
   </div>
 </div>

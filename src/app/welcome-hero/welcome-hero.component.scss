@@ -1,4 +1,27 @@
-.welcome-hero {
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
+.welcome-image {
+    background-image: url("https://wedding-885vz.s3-us-west-2.amazonaws.com/hero-background.jpg");
+    height: 100vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome-message-container {
     display: block;
-    overflow: hidden;
+    height: 100%;
+}
+
+.welcome-message {
+    font-family: 'Great Vibes', cursive;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.welcome-message h1 {
+    font-size: 5em;
 }
