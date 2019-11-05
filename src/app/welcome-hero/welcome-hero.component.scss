@@ -6,6 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 @media (min-width: 768px) {
@@ -15,7 +16,6 @@
 }
 
 .welcome-message-container {
-    display: block;
     height: 100%;
 }
 
