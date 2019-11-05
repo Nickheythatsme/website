@@ -14,7 +14,7 @@ export class HeroListComponent implements OnInit {
     },
     {
       title: 'Venue',
-      lead: 'The wedding will be held ',
+      lead: 'The wedding will be held at Nick\'s parent\'s house.',
       description: 'at 123 Fake St. Denver, CO'
     }
 ];

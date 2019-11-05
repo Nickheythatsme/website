@@ -1,6 +1,4 @@
-<div class="container-fluid" *ngFor="let hero of heros">
-    <div class="row my-2">
-        <app-foldable-hero [heroContents]="hero">
-        </app-foldable-hero>
-    </div>
+<div *ngFor="let hero of heros">
+    <app-foldable-hero [heroContents]="hero">
+    </app-foldable-hero>
 </div>
