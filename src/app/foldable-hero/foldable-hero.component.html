@@ -9,12 +9,10 @@
       <div class="col-sm d-block d-sm-none">
         <hr class="my-4">
       </div>
-      <div class="col-sm">
-        <p *ngIf="heroContents.description">{{ heroContents.description }}</p>
+      <div *ngIf="heroContents.description" class="col-sm-8">
+        <p>{{ heroContents.description }}</p>
       </div>
     </div>
-    <div class="row">
-      <ng-content></ng-content>
-    </div>
+    <ng-content class="row"></ng-content>
   </div>
 </div>
