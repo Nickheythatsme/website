@@ -37,7 +37,7 @@ import {
 })
 export class FoldableHeroComponent implements OnInit {
   @Input() heroContents: HeroContents;
-  isOpen = false;
+  isOpen = true;
 
   constructor() { }
 

@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class HeroListComponent implements OnInit {
   welcomeHero = {
     title: 'Welcome',
-    description: 'Welcome to Haley and Nick\'s wedding. This site shows event details and updates from the bride and groom.',
     lead: 'We\'ll post any updates and details to this site.'
   };
   venueHero = {
