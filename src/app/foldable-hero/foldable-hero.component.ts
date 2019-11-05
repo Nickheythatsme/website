@@ -17,10 +17,10 @@ import {
   animations: [
     trigger('buttonInsertRemove', [
       state('openTitle', style({
-        fontSize: '1.5em'
+        fontSize: '1.75em'
       })),
       state('closedTitle', style({
-        fontSize: '1em'
+        fontSize: '1.25em'
       })),
       state('open', style({
         opacity: 1,

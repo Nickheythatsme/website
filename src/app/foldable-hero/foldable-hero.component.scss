@@ -4,10 +4,10 @@
     overflow: hidden;
     background: $background-secondary;
     padding: 1em 2em 1em 2em;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 .foldable-hero h2 {
-    cursor: pointer;
-    padding: 0;
     margin: 0;
 }

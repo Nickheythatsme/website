@@ -1,18 +1,15 @@
 <div class="container my-2 mx-auto foldable-hero">
-  <h2 class="row" (click)="onClick()" [@buttonInsertRemove]="isOpen? 'openTitle' : 'closedTitle'">
-    {{ heroContents.title }}</h2>
-  <div [@buttonInsertRemove]="isOpen? 'open' : 'closed'">
-    <div class="row">
-      <div class="col-sm">
-        <p class="lead" *ngIf="heroContents.lead">{{ heroContents.lead }}</p>
-      </div>
-      <div class="col-sm d-block d-sm-none">
-        <hr class="my-4">
-      </div>
-      <div *ngIf="heroContents.description" class="col-sm-8">
-        <p>{{ heroContents.description }}</p>
-      </div>
+  <div class="row" (click)="onClick()">
+    <h2 class="col-lg" [@buttonInsertRemove]="isOpen? 'openTitle' : 'closedTitle'">
+      {{ heroContents.title }}</h2>
+    <a class="mx-auto text-left col-lg-8" *ngIf="heroContents.lead">
+        {{ heroContents.lead }}
+    </a>
+  </div>
+  <div>
+    <div [@buttonInsertRemove]="isOpen? 'open' : 'closed'">
+      <hr class="my-2">
+      <ng-content></ng-content>
     </div>
-    <ng-content class="row"></ng-content>
   </div>
 </div>

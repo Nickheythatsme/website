@@ -7,15 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroListComponent implements OnInit {
   welcomeHero = {
-      title: 'Haley and Nick\'s Wedding',
-      lead: 'Welcome to Haley and Nick\'s wedding. This site shows event details and updates from the bride and groom.',
-      description: 'Come back here regularly to see wedding updates.'
-    };
-    venueHero = {
-      title: 'Venue',
-      lead: 'The wedding will be held at Nick\'s parent\'s house.',
-      description: 'at 123 Fake St. Denver, CO'
-    };
+    title: 'Welcome',
+    description: 'Welcome to Haley and Nick\'s wedding. This site shows event details and updates from the bride and groom.',
+    lead: 'We\'ll post any updates and details to this site.'
+  };
+  venueHero = {
+    title: 'Venue Info',
+    lead: 'The wedding will be held at Nick\'s parent\'s house.',
+    description: 'at 123 Fake St. Denver, CO'
+  };
 
   constructor() { }
 
