@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
 .welcome-image {
-    background-image: url("https://wedding-885vz.s3-us-west-2.amazonaws.com/hero-background-raised.jpeg");
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
@@ -16,7 +15,7 @@
 
 @media (max-width: 767px) {
     .welcome-image {
-        background-image: url("https://wedding-885vz.s3-us-west-2.amazonaws.com/hero-background-raised-2.jpeg");
+        background-image: url("https://wedding-885vz.s3-us-west-2.amazonaws.com/hero-background-vertical.jpg");
     }
 }
 

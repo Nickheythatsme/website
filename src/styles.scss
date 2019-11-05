@@ -8,8 +8,8 @@ $color-danger: #dc3545;
 $color-light: #f8f9fa;
 $color-dark: #343a40;
 
-$background-primary: #fff;
-$background-secondary: rgba(219,219,219,.2);
+$background-primary: rgba(219,219,219,.2);
+$background-secondary: #fff;
 
 // Theme overrides
 $theme-colors: (
@@ -23,4 +23,8 @@ $theme-colors: (
     "dark": $color-dark,
 );
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+    background-color: $background-primary;
+}
 
