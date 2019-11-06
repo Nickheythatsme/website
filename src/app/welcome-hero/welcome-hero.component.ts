@@ -10,7 +10,7 @@ import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
 
 export class WelcomeHeroComponent implements OnInit {
 
-  photoSrc = "";
+  photoSrc = '';
 
   constructor(breakpointObserver: BreakpointObserver) {
     const layoutChange = breakpointObserver.observe([
@@ -29,12 +29,10 @@ export class WelcomeHeroComponent implements OnInit {
   }
 
   useLargeLayout() {
-    console.log("Using large layout");
-    this.photoSrc = "https://wedding-885vz.s3-us-west-2.amazonaws.com/hero-background.jpg";
+    this.photoSrc = 'https://wedding-885vz.s3-us-west-2.amazonaws.com/hero-background.jpg';
   }
 
   useSmallLayout() {
-    console.log("Using small layout");
-    this.photoSrc = "https://wedding-885vz.s3-us-west-2.amazonaws.com/hero-background-vertical.jpg";
+    this.photoSrc = 'https://wedding-885vz.s3-us-west-2.amazonaws.com/hero-background-vertical.jpg';
   }
 }
