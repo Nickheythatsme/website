@@ -1,14 +1,14 @@
 <app-welcome-hero>
 </app-welcome-hero>
-<app-hero-list></app-hero-list>
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <app-image-viewer [imageSrcs]="imageSrcs"></app-image-viewer>
+<div class="content">
+  <app-hero-list></app-hero-list>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-image-viewer [imageSrcs]="imageSrcs"></app-image-viewer>
+      </div>
     </div>
   </div>
-</div>
-<app-footer></app-footer>
-<div style="height: 1000px;">
+  <app-footer></app-footer>
 </div>
 <router-outlet></router-outlet>

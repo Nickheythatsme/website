@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
 .welcome-image {
-    background-image: url("https://wedding-885vz.s3-us-west-2.amazonaws.com/hero-background-vertical.jpg");
     height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
+}
+
+#background-img {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
 }
 
 @media (min-width: 768px) {
     .welcome-image {
-        background-image: url("https://wedding-885vz.s3-us-west-2.amazonaws.com/hero-background.jpg");
     }
 }
 
