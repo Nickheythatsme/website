@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeroListComponent implements OnInit {
   accomodationHero = {
     title: 'Accomodations',
-    lead: 'List of possible accomadations for guests'
+    lead: 'For guests who need to travel'
   };
   registryHero = {
     title: 'Registry Information',
@@ -16,7 +16,7 @@ export class HeroListComponent implements OnInit {
     }
   venueHero = {
     title: 'Venue Info',
-    lead: 'The wedding will be held at Nick\'s parent\'s house.',
+    lead: 'The location of the wedding',
   };
 
 
