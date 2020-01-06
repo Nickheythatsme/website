@@ -16,7 +16,7 @@ export class HeroListComponent implements OnInit {
     }
   venueHero = {
     title: 'Venue Info',
-    lead: 'The location of the wedding',
+    lead: null,
   };
 
 
