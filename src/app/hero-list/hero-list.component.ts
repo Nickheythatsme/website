@@ -6,14 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hero-list.component.scss']
 })
 export class HeroListComponent implements OnInit {
-  accomadationHero = {
-    title: 'Accomadations',
+  accomodationHero = {
+    title: 'Accomodations',
     lead: 'List of possible accomadations for guests'
   };
   registryHero = {
     title: 'Registry Information',
-    lead: 'We\'re registered at Amazon, and are accepting Venmo as well as checks.',
-  }
+    lead: null
+    }
   venueHero = {
     title: 'Venue Info',
     lead: 'The wedding will be held at Nick\'s parent\'s house.',
